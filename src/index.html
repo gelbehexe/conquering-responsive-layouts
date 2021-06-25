@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title><%= htmlWebpackPlugin.options.title %></title>
+</head>
+<body>
+<header>
+    <div class="main-nav">
+        <div class="container">
+            <div class="main-nav__wrapper">
+                <div class="logo">
+                    <img
+                            src="<%=require('./img/logo.svg')%>"
+                            alt="logo"
+                    />
+                </div>
+                <div class="hamburger-menu">
+                    <input id="nav-toggler-switch" type="checkbox" />
+                    <label
+                            aria-label="Open navigation"
+                            for="nav-toggler-switch"
+                            class="nav-toggler"
+                    >
+                <span class="hamburger">
+                  <span class="sr-only">Menu</span>
+                </span>
+                    </label>
+                    <nav id="nav" class="nav">
+                        <ul class="nav__list">
+                            <li class="nav__item">
+                                <a href="#" class="nav__link">Home</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="nav__link">About</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="nav__link">Contact</a>
+                            </li>
+                        </ul>
+                        <ul class="nav__list">
+                            <li class="nav__item">
+                                <a href="#" class="nav__link">Sign in</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="nav__link nav__link-btn">Sign up</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="section header__primary">
+        <div class="container">
+            <div class="header__primary__card">
+                <h1 class="header__primary__title">
+                    Responsive layouts
+                    <span class="header__primary__title--accent">
+                don't have to be a struggle
+              </span>
+                </h1>
+                <div class="header__primary__body">
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                        Perspiciatis maxime, at corporis explicabo culpa nihil
+                        perferendis odit beatae porro minus ipsa.
+                    </p>
+                    <button class="header__primary__body--btn">
+                        I want to learn
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section header__secondary">
+        <div class="container">
+            <div class="header__secondary--card">
+                <h2 class="header__secondary--card__title">Mobile-first</h2>
+                <p class="header__secondary--card__body">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
+                    totam dolorem unde ex, nesciunt suscipit a?
+                </p>
+            </div>
+            <div class="header__secondary--card">
+                <h2 class="header__secondary--card__title">Efficient</h2>
+                <p class="header__secondary--card__body">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum,
+                    animi laudantium a illo beatae odit vero!
+                </p>
+            </div>
+            <div class="header__secondary--card">
+                <h2 class="header__secondary--card__title">Done Right</h2>
+                <p class="header__secondary--card__body">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Perferendis numquam dicta eius, esse dolorum possimus. Odio.
+                </p>
+            </div>
+        </div>
+    </section>
+</header>
+
+<div class="section body">
+    <div class="container">
+        <main class="main">
+            <h3 class="main__title">It doesn't have to be so hard</h3>
+            <p class="main__body">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores,
+                voluptas voluptates. Ratione quam fuga omnis! Quidem itaque fuga
+                placeat ut dicta iure non molestiae rerum.
+            </p>
+            <div class="main__image">
+                <img
+                        class="main__image--img"
+                        src="<%=require('./img/the-image.jpg')%>"
+                        alt="A nice image"
+                />
+            </div>
+            <p class="main__body">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum
+                delectus quae natus architecto amet quis officiis? Facere fugit
+                earum minus quis laudantium, iusto dolores similique.
+            </p>
+        </main>
+
+        <aside class="side">
+            <div class="side__card">
+                <h4 class="side__title">Break it down</h4>
+                <p class="side__body">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde
+                    temporibus, impedit nisi numquam dignissimos dolores quisquam?
+                </p>
+            </div>
+            <div class="side__card">
+                <h4 class="side__title">Work your way up</h4>
+                <p class="side__body">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
+                    ipsam repellat nemo eveniet corporis distinctio omnis?
+                </p>
+            </div>
+            <div class="side__card">
+                <h4 class="side__title">Break it down</h4>
+                <p class="side__body">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores,
+                    aliquam aperiam? Asperiores amet molestias aliquam consequuntur?
+                </p>
+            </div>
+        </aside>
+    </div>
+</div>
+<footer class="footer">
+    <div class="container">
+        <h5 class="footer__title">Just scratching the surface</h5>
+        <div class="footer__main">
+            <div class="footer__card footer__card--primary">
+                <h6 class="footer__card__title">About our company</h6>
+                <p class="footer__card__body">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet
+                    culpa nihil quasi obcaecati! Repellendus delectus aperiam dolorum
+                    ut aut ratione?
+                </p>
+            </div>
+            <div class="footer__nav__wrapper">
+                <div class="footer__card">
+                    <h6 class="footer__card__title">Getting arround</h6>
+                    <nav class="footer__card__body footer__nav">
+                        <ul class="footer__nav__list">
+                            <li class="footer__nav__item">
+                                <a class="footer__nav__link" href="#">Home</a>
+                            </li>
+                            <li class="footer__nav__item">
+                                <a class="footer__nav__link" href="#">About</a>
+                            </li>
+                            <li class="footer__nav__item">
+                                <a class="footer__nav__link" href="#">Contact</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="footer__card">
+                    <h6 class="footer__card__title">Other things</h6>
+                    <nav class="footer__card__body footer__nav">
+                        <ul class="footer__nav__list">
+                            <li class="footer__nav__item">
+                                <a class="footer__nav__link" href="#">Lorem, ipsum</a>
+                            </li>
+                            <li class="footer__nav__item">
+                                <a class="footer__nav__link" href="#">dolor</a>
+                            </li>
+                            <li class="footer__nav__item">
+                                <a class="footer__nav__link" href="#">sit amet</a>
+                            </li>
+                            <li class="footer__nav__item">
+                                <a class="footer__nav__link" href="#">consectetur</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="footer__card">
+                    <h6 class="footer__card__title">And more</h6>
+                    <nav class="footer__card__body footer__nav">
+                        <ul class="footer__nav__list">
+                            <li class="footer__nav__item">
+                                <a class="footer__nav__link" href="#">Lorem, ipsum</a>
+                            </li>
+                            <li class="footer__nav__item">
+                                <a class="footer__nav__link" href="#">dolor</a>
+                            </li>
+                            <li class="footer__nav__item">
+                                <a class="footer__nav__link" href="#">sit amet</a>
+                            </li>
+                            <li class="footer__nav__item">
+                                <a class="footer__nav__link" href="#">consectetur</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
